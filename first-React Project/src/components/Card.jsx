@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React from "react"
-import katieZaferes from "../images/katie-zaferes.png";
+// import katieZaferes from "../images/katie-zaferes.png";
 import star from "../images/Star.png";
 
 /*
@@ -22,11 +23,12 @@ Notes:
   this data into the component.
 */
 
-export default function Card() {
+export default function Card(props) {
     return (
         <div className="card">
             <img 
-                src={katieZaferes} 
+                // eslint-disable-next-line react/prop-types
+                src={props.img}
                 className="card--image" 
                 alt="Main card image."
             />
@@ -36,12 +38,13 @@ export default function Card() {
                     className="card--star" 
                     alt="Star icon."
                 />
-                <span>5.0</span>
-                <span className="gray">(6) • </span>
-                <span className="gray">USA</span>
+                <span>{props.rating}</span>
+                <span className="gray">{props.reviewCount} • </span>
+                <span className="gray">{props.country}</span>
             </div>
-            <h2>Life Lessons with Katie Zaferes</h2>
-            <p><span className="bold">From $136</span> / person</p>
+            <h2>{props.title}</h2>
+            <p><span className="bold">From ${props.price}</span> / person</p>
         </div>
     )
 }
+

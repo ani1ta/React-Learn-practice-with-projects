@@ -3,10 +3,11 @@
 import React from "react"
 
 export default function Joke(props) {
+    console.log(props.comments)
     return (
         <div>
-            {props.Setup && <h3>Setup : {props.Setup}</h3>}
-            <p>Punchline : {props.Punchline}</p>
+            {props.setup && <h3>Setup : {props.setup}</h3>}
+            <p>Punchline : {props.punchline}</p>
             <hr />
         </div>
     )
