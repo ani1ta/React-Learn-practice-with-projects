@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .timeline-mindmap {
+    flex: 1;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  .phase {
+    margin-bottom: 10px;
+  }
+  
+  .sub-phase {
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .sub-sub-phase {
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  
+  .details-panel {
+    flex: 1;
+    padding: 20px;
+  }
+  
