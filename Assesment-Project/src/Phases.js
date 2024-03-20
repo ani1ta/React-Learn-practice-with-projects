@@ -41,42 +41,57 @@ export const phases = [
    },
 
   // Research phase
-  { id: '1', category: 'research', data: { label: 'Research' }, position: { y: 580, x: 5 }, ...nodeDefaults,  style: { backgroundColor: nodeColor({ category: 'research' }) , color: 'white', border:'none'}},
-  { id: '2', category: 'research', data: { label: 'External' }, position: { y: 520, x: 350 }, ...nodeDefaults,  style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  },
-  { id: '3', category: 'research', data: { label: 'Internal' }, position: { y: 620, x: 350 }, ...nodeDefaults, sourcePosition: Position.Left,  style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }},
+  { id: '1', category: 'research', data: { label: 'Research' }, position: { x: 5,  y: 580 }, ...nodeDefaults,  style: { backgroundColor: nodeColor({ category: 'research' }) , color: 'white', border:'none'}},
+  { id: '2', category: 'research', data: { label: 'External' }, position: { x: 350,  y: 520 }, ...nodeDefaults,  style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  },
+  { id: '3', category: 'research', data: { label: 'Internal' }, position: { x: 350,  y: 620 }, ...nodeDefaults, sourcePosition: Position.Left,  style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }},
 
   // Planning Phase
-  { id: '4', category: 'planning', data: { label: 'Planning' }, position: { y: 720, x: 5 }, ...nodeDefaults, style: { backgroundColor: nodeColor({ category: 'planning' }), border:'none' }  },
-  { id: '5', category: 'planning', data: { label: 'PRD' }, position: { y: 670, x: 350 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'planning' }), border:'none' }  },
-  { id: '6', category: 'planning', data: { label: 'Specs' }, position: { y: 780, x: 350 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'planning' }), border:'none' }  },
+  { id: '4', category: 'planning', data: { label: 'Planning' }, position: { x: 5,  y: 720 }, ...nodeDefaults, style: { backgroundColor: nodeColor({ category: 'planning' }), border:'none' }  },
+  { id: '5', category: 'planning', data: { label: 'PRD' }, position: { x: 350,  y: 670 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'planning' }), border:'none' }  },
+  { id: '6', category: 'planning', data: { label: 'Specs' }, position: { x: 350,  y: 780 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'planning' }), border:'none' }  },
 
   // Designing Phase
-  { id: '7', category: 'designing', data: { label: 'Designing' }, position: { y: 900, x: 5 }, ...nodeDefaults, style: { backgroundColor: nodeColor({ category: 'Designing' }), border:'none' }  },
-  { id: '8', category: 'designing', data: { label: 'Hardware' }, position: { y: 840, x: 350 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'Designing' }), border:'none' }  },
-  { id: '9', category: 'designing', data: { label: 'Software' }, position: { y: 970, x: 350 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'Designing' }), border:'none' }  },
+  { id: '7', category: 'designing', data: { label: 'Designing' }, position: { x: 5,  y: 900 }, ...nodeDefaults, style: { backgroundColor: nodeColor({ category: 'Designing' }), border:'none' }  },
+  { id: '8', category: 'designing', data: { label: 'Hardware' }, position: {  x: 350, y: 840 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'Designing' }), border:'none' }  },
+  { id: '9', category: 'designing', data: { label: 'Software' }, position: { x: 350,  y: 970 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'Designing' }), border:'none' }  },
 
   // Manufacturing Phase
-  { id: '10', category: 'manufacturing', data: { label: 'Manufacturing' }, position: { y: 1100, x: 5 }, ...nodeDefaults, style: { backgroundColor: nodeColor({ category: 'manufacturing' }), border:'none' }  },
-  { id: '11', category: 'manufacturing', data: { label: 'Material' }, position: { y: 1030, x: 350 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'manufacturing' }), border:'none' }  },
-  { id: '12', category: 'manufacturing', data: { label: 'Production' }, position: { y: 1150, x: 350 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'manufacturing' }), border:'none' }  },
+  { id: '10', category: 'manufacturing', data: { label: 'Manufacturing' }, position: { x: 5,  y: 1100 }, ...nodeDefaults, style: { backgroundColor: nodeColor({ category: 'manufacturing' }), border:'none' }  },
+  { id: '11', category: 'manufacturing', data: { label: 'Material' }, position: {  x: 350, y: 1030 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'manufacturing' }), border:'none' }  },
+  { id: '12', category: 'manufacturing', data: { label: 'Production' }, position: { x: 350,  y: 1150 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'manufacturing' }), border:'none' }  },
 
   // Sales Phase
-  { id: '13', category: 'sales', data: { label: 'Sales/Marketing' }, position: { y: 1250, x: 5 }, ...nodeDefaults, style: { backgroundColor: nodeColor({ category: 'sales' }), border:'none' }  },
-  { id: '14', category: 'sales', data: { label: 'Online' },  position: { y: 1200, x: 350 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'sales' }), border:'none' }  },
-  { id: '15', category: 'sales', data: { label: 'DealerShip' }, position: { y: 1300, x: 350 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'sales' }), border:'none' }  },
+  { id: '13', category: 'sales', data: { label: 'Sales/Marketing' }, position: { x: 5,  y: 1250 }, ...nodeDefaults, style: { backgroundColor: nodeColor({ category: 'sales' }), border:'none' }  },
+  { id: '14', category: 'sales', data: { label: 'Online' },  position: { x: 350,  y: 1200 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'sales' }), border:'none' }  },
+  { id: '15', category: 'sales', data: { label: 'DealerShip' }, position: {  x: 350, y: 1300 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'sales' }), border:'none' }  },
 
   // B2C Phase
-  { id: '16', category: 'research', data: { label: 'B2C' }, position: { y: 440, x: 750 }, ...nodeDefaults,style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  },
-  { id: '21', category: 'research', data: { label: 'B2C' }, position: { y: 600, x: 750 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  },
-  { id: '17', category: 'research', type: 'hoverableNode', data: { label: 'Online' }, position: { y: 350, x: 1050 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  }, 
-  { id: '18', category: 'research', data: { label: 'Interview' }, position: { y: 420, x: 1050 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  },
-  { id: '19', category: 'research', data: { label: 'Public Data' }, position: { y: 480, x: 1050 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  },
-  { id: '20', category: 'research', data: { label: 'Health' }, position: { y: 550, x: 1050 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  },
+  { id: '16', category: 'research', data: { label: 'B2C' }, position: {x: 750,  y: 440 }, ...nodeDefaults,style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  },
+  { id: '21', category: 'research', data: { label: 'B2C' }, position: {  x: 750, y: 600 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  },
+  { id: '17', category: 'research', type: 'hoverableNode', data: { label: 'Online' }, position: { x: 1050,  y: 350 }, ...nodeDefaults,  style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  }, 
+  { id: '18', category: 'research', data: { label: 'Interview' }, position: { x: 1050,  y: 420 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  },
+  { id: '19', category: 'research', data: { label: 'Public Data' }, position: { x: 1050,  y: 480 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  },
+  { id: '20', category: 'research', data: { label: 'Health' }, position: {  x: 1050, y: 550 }, ...nodeDefaults, sourcePosition: Position.Left, style: { backgroundColor: nodeColor({ category: 'research' }), color: 'white', border:'none' }  },
+
+  //  LAST NODE
+  {id: '22',
+  position: { y: 900, x: 400 },
+  type: 'custom',
+  data: {},
+  style: {
+    border: '1px solid #ccc',
+    borderRadius: '50%',
+    width: 30,
+    height: 30,
+    background: '#f0f0f0' }, ...nodeDefaults,
+
+   },
 ];
 
 
 
 export const phaseEdges = [
+  {id: 'e17-22', source: '17', target: '22'},
   // parent node
   {id: 'e0-1', source : '0', target :'1'},
   {id: 'e0-4', source : '0', target :'4'},

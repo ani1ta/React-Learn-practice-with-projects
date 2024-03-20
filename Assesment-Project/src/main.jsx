@@ -1,4 +1,4 @@
-/* eslint-disable react/no-deprecated */
+/* eslint-disable no-unused-vars */
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from './App';
