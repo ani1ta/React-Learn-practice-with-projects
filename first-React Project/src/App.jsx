@@ -1,8 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react"
 import Navbar from "./components/Navbar"
-// import Hero from "./components/Hero"
+import Hero from "./components/Hero"
 import Card from "./components/Card"
+import data from "./data"
 
 
 /*
@@ -19,19 +20,26 @@ still be block elements, stacked vertically. We'll add styling later.
 
 
 export default function App() {
-    return (
-        <div>
-            <Navbar />
-            {/* <Hero /> */}
+    
+    const cards = data.map(item => {
+        return (
             <Card 
-                img={katieZaferes}
-                rating="5.0"
-                reviewCount={6}
-                country="India"
-                title="Life Lessons with Katie Zaferes"
-                price={136}
+                key={item.id}
+                // item={item}
+                {...item}
             />
+
+        )
+    })
+
+    return(
+        <div >
+            <Navbar />
+            <Hero />
+            <section className="cards-list">
+                {cards}
+            </section>
         </div>
     )
-}
 
+}
