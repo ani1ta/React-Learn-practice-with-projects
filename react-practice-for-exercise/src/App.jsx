@@ -7,6 +7,10 @@ import FourthUseState from './components/fourthUseState'
 import FifthUsestate from './components/fifthPracticeUseState'
 import SixthUseState from './components/sixthUseState'
 import SeventhUseState from './components/seventhUseState'
+import EighthUsestate from './components/eigthUseState'
+import NinthUsestate from './components/ninthUseState'
+import ComplextUseState from './components/complexUseState'
+import ComplexStateObjects from './components/complexStateObjects'
 import './App.css'
 
 function App() {
@@ -20,7 +24,11 @@ function App() {
       {/* <FourthUseState /> */}
       {/* <FifthUsestate /> */}
       {/* <SixthUseState /> */}
-      <SeventhUseState />
+      {/* <SeventhUseState /> */}
+      {/* <EighthUsestate /> */}
+      {/* <NinthUsestate /> */}
+      {/* <ComplextUseState/> */}
+      <ComplexStateObjects/>
    </div>
   )
 }

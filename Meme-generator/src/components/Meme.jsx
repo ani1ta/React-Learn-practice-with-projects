@@ -3,45 +3,45 @@
 import React from 'react'
 import memesData from './memesData'
 export default function Meme(){
+    const [memeImage, setMemeImage] = React.useState("")
 
  /**
-     * Challenge: Get a random image from the `memesData` array
-     * when the "new meme image" button is clicked.
-     * 
-     * Log the URL of the image to the console. (Don't worry
-     * about displaying the image yet)
+     * Challenge: Save the random meme URL in state
+     * - Create new state called `memeImage` with an
+     *   empty string as default
+     * - When the getMemeImage function is called, update
+     *   the `memeImage` state to be the random chosen
+     *   image URL
+     * - Below the div.form, add an <img /> and set the
+     *   src to the new `memeImage` state you created
      */
-
+    
     function handlememeButton(){
         // console.log("clicked")
         const memesArray = memesData.data.memes
         const randomNumber = Math.floor(Math.random() * memesArray.length)
-        let url = memesArray[randomNumber].url
-        console.log('URL: ',url)
+        setMemeImage(memesArray[randomNumber].url)
+       // memesArray[randomNumber].url  <-- this line is incomplete!
 
         // debugger
     }
 
     return(
         <main>
-            <form className='form'>
-                <label htmlFor='top-text'>Top text
+            <div className='form'>
                 <input type='text'
                    placeholder='Shut up'
                     className='form--input'
                 />
-                </label>
-                
-                <label> Bottom text 
                     <input type='text'
                     placeholder='and Take my money'
                     className='form--input'/>
-                </label>
 
                 <button className='form--button' onClick={handlememeButton}>
                     Get a new meme image 🖼
                 </button>
-            </form>
+            </div>
+            <img src={memeImage} className='meme--image'/>
         </main>
     )
 }

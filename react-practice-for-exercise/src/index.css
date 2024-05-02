@@ -110,7 +110,7 @@ body{
 
 
 /* sixthUseState.jsx */
-
+/* 
 * {
   box-sizing: border-box;
 }
@@ -170,4 +170,137 @@ body {
 .counter--minus {
   margin-right: -20px;
   z-index: 1;
+} */
+
+
+
+/* eigthUseState.jsx ==> css */
+/* 
+body{
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #262626;
+  color: #D9D9D9;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.state{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.state--title{
+  text-align: center;
+}
+
+.state--value{
+  background-color: white;
+  height: 100px;
+  width: 100Px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #262626;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  font-family: 'Inter', sans-serif;
+} */
+
+
+
+/* ComplexUseState.jsx => ka css style */
+
+/* body{
+  background-color: #70B85D;
+  color: white;
+  padding: 20px;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.3rem;
+}
+
+button{
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+}
+
+button:hover{
+  background-color: #FFFEF1;
+  color: #2C5E2E;
+
+}
+
+button:focus{
+  outline: 0;
+} */
+
+
+/* ComplexStateObject.jsx */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  height: 450px;
+  box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+  -moz-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+}
+
+.card--image {
+  width: 100%;
+  padding: 10%;
+  padding-bottom: 0;
+}
+
+.card--name {
+  margin-block: 13px;
+  color: #333333;
+}
+
+.card--info {
+  padding: 10px;
+}
+
+.card--favorite {
+  width: 25px;
+  cursor: pointer;
+}
+
+.card--contact {
+  font-size: 0.75rem;
+  color: gray;
+  margin-block: 5px;
 }
