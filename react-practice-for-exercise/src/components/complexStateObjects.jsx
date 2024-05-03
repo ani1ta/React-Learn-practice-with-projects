@@ -1,9 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import user from '../assets/user.jpg'
-import blankStar from '../assets/blank star.jpg'
-import filledStar from '../assets/fill star.jpg'
 
+import Star from "./star";
 export default function ComplexStateObjects(){
     const [contact, setContact] = React.useState({
         firstName: "Annie",
@@ -20,17 +19,13 @@ export default function ComplexStateObjects(){
         })
     }
 
-    let starIcon = contact.isFavorite ? filledStar : blankStar
+    
     return (
         <main>
             <article className="card">
                 <img src={user} className="card--image" />
                 <div className="card--info">
-                    <img 
-                        src={starIcon} 
-                        className="card--favorite"
-                        onClick={toggleFavorite}
-                    />
+                    <Star isFilled={contact.isFavorite} handleClick={toggleFavorite}/>
                     <h2 className="card--name">
                         {contact.firstName } {contact.lastName}
                     </h2>

@@ -251,7 +251,7 @@ button:focus{
 
 
 /* ComplexStateObject.jsx */
-/* 
+
 * {
   box-sizing: border-box;
 }
@@ -303,11 +303,11 @@ main {
   font-size: 0.75rem;
   color: gray;
   margin-block: 5px;
-} */
+}
 
 
 /* passingStateProps.jsx */
-
+/* 
 *{
   box-sizing: border-box;
 }
@@ -367,4 +367,4 @@ body {
 .counter--minus {
   margin-right: -20px;
   z-index: 1;
-}
+} */

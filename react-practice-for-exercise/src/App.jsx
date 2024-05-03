@@ -29,8 +29,8 @@ function App() {
       {/* <EighthUsestate /> */}
       {/* <NinthUsestate /> */}
       {/* <ComplextUseState/> */}
-      {/* <ComplexStateObjects/> */}
-      <PassingStateProps/>
+      <ComplexStateObjects/>
+      {/* <PassingStateProps/> */}
    </div>
   )
 }
