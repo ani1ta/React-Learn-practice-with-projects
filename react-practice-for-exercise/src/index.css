@@ -299,6 +299,16 @@ main {
   cursor: pointer;
 }
 
+.card--favorite-button{
+  background-color: transparent;
+  border: none;
+}
+
+.card--favorite-button:active{
+  box-shadow: none;
+  transform: none;
+}
+
 .card--contact {
   font-size: 0.75rem;
   color: gray;
