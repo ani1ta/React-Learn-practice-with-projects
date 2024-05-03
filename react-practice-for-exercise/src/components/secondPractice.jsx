@@ -26,7 +26,7 @@ function SecondPractice(){
     const thingsElements = things.map(thing => <p key={thing}>{thing}</p>)
     
     return (
-        <div>
+        <div> 
             <button onClick={addItem}>Add Item</button>
             {thingsElements}
         </div>
