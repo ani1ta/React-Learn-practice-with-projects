@@ -12,6 +12,7 @@ import NinthUsestate from './components/ninthUseState'
 import ComplextUseState from './components/complexUseState'
 import ComplexStateObjects from './components/complexStateObjects'
 import PassingStateProps from './components/passingStateProps'
+import Boxchallanges from './components/boxChallanges'
 import './App.css'
 
 function App() {
@@ -29,8 +30,9 @@ function App() {
       {/* <EighthUsestate /> */}
       {/* <NinthUsestate /> */}
       {/* <ComplextUseState/> */}
-      <ComplexStateObjects/>
+      {/* <ComplexStateObjects/> */}
       {/* <PassingStateProps/> */}
+      <Boxchallanges darkMode={true}/>
    </div>
   )
 }

@@ -251,7 +251,7 @@ button:focus{
 
 
 /* ComplexStateObject.jsx */
-
+/* 
 * {
   box-sizing: border-box;
 }
@@ -313,7 +313,7 @@ main {
   font-size: 0.75rem;
   color: gray;
   margin-block: 5px;
-}
+} */
 
 
 /* passingStateProps.jsx */
@@ -378,3 +378,18 @@ body {
   margin-right: -20px;
   z-index: 1;
 } */
+
+/* boxChallanges.jsx */
+
+*{
+  box-sizing: border-box;
+}
+
+.box{
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  margin-right: 4px;
+  border-radius: 5px;
+  display: inline-block;
+}
