@@ -14,6 +14,7 @@ import ComplexStateObjects from './components/complexStateObjects'
 import PassingStateProps from './components/passingStateProps'
 import Boxchallanges from './components/boxChallanges'
 import ConditionalRendering from './components/conditional rendering'
+import ConditionalRenderingPractice from './components/conditional rendering practice'
 import './App.css'
 
 function App() {
@@ -34,7 +35,8 @@ function App() {
       {/* <ComplexStateObjects/> */}
       {/* <PassingStateProps/> */}
       {/* <Boxchallanges darkMode={true}/> */}
-      <ConditionalRendering />
+      {/* <ConditionalRendering /> */}
+      <ConditionalRenderingPractice />
    </div>
   )
 }
