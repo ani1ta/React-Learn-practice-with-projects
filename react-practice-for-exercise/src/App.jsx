@@ -13,6 +13,7 @@ import ComplextUseState from './components/complexUseState'
 import ComplexStateObjects from './components/complexStateObjects'
 import PassingStateProps from './components/passingStateProps'
 import Boxchallanges from './components/boxChallanges'
+import ConditionalRendering from './components/conditional rendering'
 import './App.css'
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
       {/* <ComplextUseState/> */}
       {/* <ComplexStateObjects/> */}
       {/* <PassingStateProps/> */}
-      <Boxchallanges darkMode={true}/>
+      {/* <Boxchallanges darkMode={true}/> */}
+      <ConditionalRendering />
    </div>
   )
 }
