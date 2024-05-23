@@ -35,8 +35,8 @@ function App() {
       {/* <ComplexStateObjects/> */}
       {/* <PassingStateProps/> */}
       {/* <Boxchallanges darkMode={true}/> */}
-      {/* <ConditionalRendering /> */}
-      <ConditionalRenderingPractice />
+      <ConditionalRendering />
+      {/* <ConditionalRenderingPractice /> */}
    </div>
   )
 }
