@@ -5,9 +5,14 @@ import React from "react";
 export default function ReactForm(){
 
     const [formData, setFormData]  = React.useState(
-        {firstName : "", lastName : ""}
+        {firstName : "", lastName : "", emauil : ""}
     )
    
+
+    /**
+     * Challenge: add an email field/state to the form
+     */
+    
 
     console.log(formData)
     
@@ -29,9 +34,15 @@ export default function ReactForm(){
             />
             <input 
                 type="text"
-                placeholder="First Name"
+                placeholder="Last Name"
                 onChange={handleChange}
                 name="lastName"
+            />
+            <input 
+                type="email"
+                placeholder="email"
+                onChange={handleChange}
+                name="email"
             />
         </form>
     )
