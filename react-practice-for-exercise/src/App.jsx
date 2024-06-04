@@ -2,6 +2,7 @@
 import React from 'react'
 import ImportExportFile from './components/importExportfile'
 import ReactForm from './React Form/Reactform1'
+import SignUpReactForm from './React Form/signUpReactForm'
 import './App.css'
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
   return (
    <div>
       {/* <ImportExportFile /> */}
-      <ReactForm />
+      {/* <ReactForm /> */}
+      <SignUpReactForm />
    </div>
   )
 }

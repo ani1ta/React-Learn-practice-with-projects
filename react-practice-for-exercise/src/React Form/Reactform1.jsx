@@ -1,152 +1,145 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
-import './form.css'
-
-export default function ReactForm(){
-
-    const [formData, setFormData]  = React.useState(
+import React from "react"
+// import './form.css'
+export default function Form() {
+    const [formData, setFormData] = React.useState(
         {
-            firstName : "", 
-            lastName : "", 
-            email : "", 
-            comments : "",
-            isFriendly : true,
-            employed : ""
+            firstName: "", 
+            lastName: "", 
+            email: "", 
+            comments: "", 
+            isFriendly: true,
+            employment: "",
+            favColor: ""
         }
     )
-   
-
-    /**
-     * Challenge: add an email field/state to the form
-     */
     
-
-    // console.log(formData)
-
-    // console.log(formData.favColor)
-
-    function handleChange(event){
-        const {name, value, type, checked}  = event.target
+    const id = React.useId()
+    
+    
+    function handleChange(event) {
+        const {name, value, type, checked} = event.target
         setFormData(prevFormData => {
-             return {
+            return {
                 ...prevFormData,
                 [name]: type === "checkbox" ? checked : value
             }
         })
     }
-
-    /**
-     * Challenge: Add a textarea for "comments" to the form
-     * Make sure to update state when it changes.
-     */
-      
-
-    function submitHandleButton(event){
+    
+    function handleSubmit(event) {
         event.preventDefault()
         console.log(formData)
     }
-    return(
-        <form onSubmit={submitHandleButton}>
-            <input 
+    
+    return (
+        <form onSubmit={handleSubmit}>
+            <label htmlFor={id + "-firstName"}>First Name: </label>
+            <br />
+            <input
                 type="text"
-                placeholder="First Name"
                 onChange={handleChange}
                 name="firstName"
                 value={formData.firstName}
+                id={id + "-firstName"}
             />
-            <input 
+            <br />
+            <br />
+            <label htmlFor={id + "-lastName"}>Last Name</label>
+            <br />
+            
+            <input
                 type="text"
-                placeholder="Last Name"
                 onChange={handleChange}
                 name="lastName"
                 value={formData.lastName}
+                id={id + "-lastName"}
             />
-            <input 
+            <br />
+            <br />
+            <label htmlFor={id + "-email"}>Email</label>
+            <br />
+            <input
                 type="email"
-                placeholder="email"
                 onChange={handleChange}
                 name="email"
                 value={formData.email}
+                id={id + "-email"}
             />
+            <br />
+            <br />
+            <label htmlFor={id + "-comments"}>Comments</label>
+            <br />
             <textarea 
                 value={formData.comments}
-                name="comments"
-                placeholder="Comments"
                 onChange={handleChange}
+                name="comments"
+                id={id + "-comments"}
             />
+            <br />
+            <br />
             <input 
-                type="checkbox"
-                id="isFriendly"
+                type="checkbox" 
+                id={id + "-isFriendly"} 
                 checked={formData.isFriendly}
                 onChange={handleChange}
                 name="isFriendly"
             />
-            <label htmlFor="isFriendly">Are you friendly? </label>
-            <br/>
-
+            <label htmlFor={id + "-isFriendly"}>Are you friendly?</label>
+            <br />
+            <br />
+            
             <fieldset>
-                <legend>Current EMployment Status</legend>
-
-                <input
+                <legend>Current employment status</legend>
+                <input 
                     type="radio"
-                    name="employed"
-                    id="unemployed"
+                    id={id + "-unemployed"}
+                    name="employment"
                     value="unemployed"
-                    checked={formData.employed === "unemployed"}
+                    checked={formData.employment === "unemployed"}
                     onChange={handleChange}
                 />
+                <label htmlFor={id + "-unemployed"}>Unemployed</label>
+                <br />
                 
-                <label htmlFor="unemployed">Unemplyed</label>
-                <br />
-
-                <input
+                <input 
                     type="radio"
-                    name="employed"
-                    id="part-time"
+                    id={id + "-part-time"}
+                    name="employment"
                     value="part-time"
-                    checked={formData.employed === "part-time"}
+                    checked={formData.employment === "part-time"}
                     onChange={handleChange}
                 />
-
-                <label htmlFor="part-time">Part-time</label>
-
+                <label htmlFor={id + "-part-time"}>Part-time</label>
                 <br />
-                <input
+                
+                <input 
                     type="radio"
-                    name="employed"
-                    id="full-time"
+                    id={id + "-full-time"}
+                    name="employment"
                     value="full-time"
-                    checked={formData.employed === "full-time"}
+                    checked={formData.employment === "full-time"}
                     onChange={handleChange}
                 />
-
-                <label htmlFor="full-time">Full-time</label>
+                <label htmlFor={id + "-full-time"}>Full-time</label>
                 <br />
-
             </fieldset>
-
             <br />
-
-            <label htmlFor="favColor">What is your fav color?</label>
+            
+            <label htmlFor={id + "-favColor"}>What is your favorite color?</label>
             <br />
-            <select
-                id="favColor"
+            <select 
+                id={id + "-favColor"} 
                 value={formData.favColor}
                 onChange={handleChange}
                 name="favColor"
             >
-                <option value="">-- Choose --</option>
                 <option value="red">Red</option>
                 <option value="orange">Orange</option>
-                <option value="green">Green</option>
                 <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
                 <option value="blue">Blue</option>
                 <option value="indigo">Indigo</option>
-                <option value="voilet">Voilet</option>
-                <option value="black">Black</option>
-                <option value="white">White</option>
-                
-                
+                <option value="violet">Violet</option>
             </select>
             <br />
             <br />
