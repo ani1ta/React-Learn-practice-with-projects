@@ -4,6 +4,7 @@ import ImportExportFile from './components/importExportfile'
 import ReactForm from './React Form/Reactform1'
 import SignUpReactForm from './React Form/signUpReactForm'
 import MakingApiCall from './useEffect React/MakingApiCall'
+import UseEffectDependencies from './useEffect React/UseEffect - when to use dependencies'
 import './App.css'
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       {/* <ImportExportFile /> */}
       {/* <ReactForm /> */}
       {/* <SignUpReactForm /> */}
-      <MakingApiCall />
+      {/* <MakingApiCall /> */}
+      <UseEffectDependencies />
    </div>
   )
 }
